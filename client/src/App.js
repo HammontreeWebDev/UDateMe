@@ -2,6 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Pages -> Below:
+
+// * 1) Landing (<Login> , <Signup>)
+// * 2) Dashboard (<Conversation>, <Restaurant>, <Entertainment>)
+// * 3) PartnerProfile (<PartnerHome>, <Quiz>)
+
 function App() {
   return (
     <div className="App">
