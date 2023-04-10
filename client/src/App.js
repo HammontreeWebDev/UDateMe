@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 // Import Apollo Client (Front End): 
 import {
