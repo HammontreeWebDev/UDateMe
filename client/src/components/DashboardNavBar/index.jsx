@@ -26,11 +26,11 @@ const DashboardNavBar = (props) => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link href='/dashboard'>Home</Nav.Link>
+                                    <Nav.Link onClick={props.homeClick}>Home</Nav.Link>
                                     <Nav.Link onClick={props.conversationClick}>Conversation Starters</Nav.Link>
                                     <Nav.Link onClick={props.diningClick}>Dining</Nav.Link>
                                     <Nav.Link onClick={props.entertainmentClick}>Entertainment</Nav.Link>
-                                    <Nav.Link onClick={props.partnerClick}>Partner Profile</Nav.Link>
+                                    <Nav.Link href='/partnerprofile'>Partner Profile</Nav.Link>
                                     <Nav.Link onClick={props.logoutClick}>Log Out</Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
