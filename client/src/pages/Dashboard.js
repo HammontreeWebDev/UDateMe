@@ -3,9 +3,11 @@ import Auth from '../utils/auth';
 
 // components:
 import DashboardNavBar from '../components/DashboardNavBar';
+import ConversationStarters from '../components/ConversationStarters';
+import Dining from '../components/Dining';
+import Entertainment from '../components/Entertainment';
 
 // Dashboard Page
-// conversation, dining, entertainment, logout
 
 const Dashboard = () => {
 
@@ -68,9 +70,9 @@ const Dashboard = () => {
         <main>
             <section>
             {showMainContent ? <MainContent /> : null}
-            {/* {showConversation ? <ConversationStarters /> : null}
+            {showConversation ? <ConversationStarters /> : null}
             {showDining ? <Dining /> : null}
-            {showEntertainment ? <MainContent /> : null} */}
+            {showEntertainment ? <Entertainment /> : null}
 
             </section>
         </main>
