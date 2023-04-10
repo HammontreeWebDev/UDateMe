@@ -1,0 +1,14 @@
+:root {
+
+    /** Color Pallette: */
+    --dark-pink: #E82590;
+    --light-pink: #ED27F2;
+    --main-purple: #A72EDB;
+    --blue-purple: #7E27F2;
+    --blue: #4325E8;
+
+}
+
+body {
+    min-height: 100vh;
+}
