@@ -22,12 +22,6 @@ const userSchema = new Schema(
       required: true,
       match: [/\S{8,}/, "Invalid password"],
     },
-    groups: [
-      {
-        type: Object,
-        ref: "Group",
-      },
-    ],
   }
 );
 
