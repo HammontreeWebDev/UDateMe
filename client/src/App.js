@@ -22,6 +22,7 @@ import Auth from './utils/auth';
 // * 3) PartnerProfile (<PartnerHome>, <Quiz>)
 
 import Landing from './pages/Landing';
+import Dashboard from './pages/Dashboard';
 
 // HTTP LINK for graphQL:
 const httpLink = createHttpLink({
@@ -50,9 +51,16 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+      <Router>
+        <Routes>
 
-    <Landing/>
-    
+        <Route
+            path='/'
+            element={Auth.loggedIn() ? <Dashboard /> : <Landing />}
+          />
+
+        </Routes>
+      </Router>
     </ApolloProvider>
   );
 }
