@@ -50,8 +50,13 @@ function App() {
       <Router>
         <Routes>
 
-        <Route
+          <Route
             path='/'
+            element={Auth.loggedIn() ? <Dashboard /> : <Landing />}
+          />
+
+          <Route
+            path='/dashboard'
             element={Auth.loggedIn() ? <Dashboard /> : <Landing />}
           />
 

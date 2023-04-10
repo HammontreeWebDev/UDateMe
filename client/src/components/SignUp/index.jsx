@@ -73,6 +73,9 @@ const SignUp = () => {
                         value={formState.password}
                         onChange={handleChange}
                     />
+                    <Form.Text className="text-muted">
+                        Please create a password longer than 8 characters.
+                    </Form.Text>
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Submit
