@@ -1,13 +1,12 @@
 import React from 'react';
 
 // Bootstrap:
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const LandingNavBar = () => {
+const LandingNavBar = (props) => {
 
     return(
         <>
@@ -28,8 +27,9 @@ const LandingNavBar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Login</Nav.Link>
-                  <Nav.Link href="#action2">Register</Nav.Link>
+                  <Nav.Link onClick={props.homeClick}>Home</Nav.Link>
+                  <Nav.Link onClick={props.loginClick}>Login</Nav.Link>
+                  <Nav.Link onClick={props.signUpClick}>Sign Up</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
