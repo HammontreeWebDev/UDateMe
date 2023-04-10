@@ -22,6 +22,7 @@ import Auth from './utils/auth';
 
 import Landing from './pages/Landing';
 import Dashboard from './pages/Dashboard';
+import PartnerProfile from './pages/PartnerProfile';
 
 // HTTP LINK for graphQL:
 const httpLink = createHttpLink({
@@ -58,6 +59,11 @@ function App() {
           <Route
             path='/dashboard'
             element={Auth.loggedIn() ? <Dashboard /> : <Landing />}
+          />
+
+          <Route
+            path='/partnerprofile'
+            element={Auth.loggedIn() ? <PartnerProfile /> : <Landing />}
           />
 
         </Routes>
