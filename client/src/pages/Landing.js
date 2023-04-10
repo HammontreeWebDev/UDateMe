@@ -8,6 +8,8 @@ const Landing = () => {
     return (
         <p>
             Hello World!
+            <br></br>
+            This is the landing page!
         </p>
     );
 }
