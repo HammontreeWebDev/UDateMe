@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // Bootstrap:
 import Container from 'react-bootstrap/Container';
@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const DashboardNavBar = (props) => {
+
     return (
         <>
             {[false].map((expand) => (
