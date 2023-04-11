@@ -7,6 +7,12 @@
     --blue-purple: #7E27F2;
     --blue: #4325E8;
 
+    /** Fonts:  */
+    --barrio: 'Barrio', cursive;
+    --frijole: 'Frijole', cursive;
+    --display: 'Sedgwick Ave Display', cursive;
+    --neon: 'Tilt Neon', cursive;
+    --prism: 'Tilt Prism', cursive;
 }
 
 body {
