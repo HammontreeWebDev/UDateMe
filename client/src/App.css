@@ -11,8 +11,8 @@
     --barrio: 'Barrio', cursive;
     --frijole: 'Frijole', cursive;
     --display: 'Sedgwick Ave Display', cursive;
-    --neon: 'Tilt Neon', cursive;
     --prism: 'Tilt Prism', cursive;
+    --neon: 'Tilt Neon', cursive;
 }
 
 body {

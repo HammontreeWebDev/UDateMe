@@ -14,9 +14,9 @@ const LandingNavBar = (props) => {
     return(
         <>
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3 bg-lightpink">
+        <Navbar key={expand} expand={expand} className="mb-3 bg-mainpurple">
           <Container fluid>
-            <Navbar.Brand>UDateMe</Navbar.Brand>
+            <Navbar.Brand className='nav-title-text'>UDateMe</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -25,12 +25,14 @@ const LandingNavBar = (props) => {
               className="bg-bluepurple"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}
+                className='nav-title-text'
+                >
                   Welcome!
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav className="justify-content-end flex-grow-1 pe-3 nav-link-text">
                   <Nav.Link onClick={props.homeClick}>Home</Nav.Link>
                   <Nav.Link onClick={props.loginClick}>Login</Nav.Link>
                   <Nav.Link onClick={props.signUpClick}>Sign Up</Nav.Link>

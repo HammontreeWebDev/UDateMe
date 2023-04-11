@@ -1,7 +1,17 @@
-.bg-lightpink {
+.bg-mainpurple {
     background-color: var(--main-purple);
 }
 
 .bg-bluepurple {
-    background-color: var(--blue-purple);
+    background-color: var(--blue-purple) !important;
+}
+
+.nav-title-text {
+    font-family: var(--frijole);
+    color: white !important;
+}
+
+.nav-link-text {
+    font-family: var(--neon);
+    color: white;
 }
