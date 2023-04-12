@@ -11,9 +11,15 @@
     font-family: var(--frijole);
     width: 100%;
     text-align: center;
+    color: var(--blue);
 }
 
 .custom-placeholder {
     width: 100%;
     text-align: center;
+}
+
+.form-button {
+    background-color: var(--main-purple) !important;
+    border: none !important;
 }

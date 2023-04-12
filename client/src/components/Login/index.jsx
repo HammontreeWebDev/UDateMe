@@ -67,7 +67,7 @@ const Login = () => {
                         className='custom-placeholder'
                     />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="primary" type="submit" className="form-button">
                     Log In
                 </Button>
             </Form>

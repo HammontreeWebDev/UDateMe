@@ -83,7 +83,7 @@ const SignUp = () => {
                         Please create a password longer than 8 characters.
                     </Form.Text>
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="primary" type="submit" className="form-button">
                     Sign Up
                 </Button>
             </Form>
