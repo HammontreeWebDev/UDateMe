@@ -15,10 +15,10 @@
     --neon: 'Tilt Neon', cursive;
 }
 
-body {
-    min-height: 100vh;
-}
-
 .default-font {
     font-family: var(--neon);
+}
+
+#root {
+    min-height: 100vh;
 }
