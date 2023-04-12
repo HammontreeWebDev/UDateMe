@@ -14,7 +14,7 @@ const LandingNavBar = (props) => {
     return(
         <>
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3 bg-mainpurple">
+        <Navbar key={expand} expand={expand} className="mb-3 bg-mainpurple" variant='dark'>
           <Container fluid>
             <Navbar.Brand className='nav-title-text'>UDateMe</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />

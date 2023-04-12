@@ -16,3 +16,9 @@
     font-family: var(--neon);
     color: white;
 }
+
+/* !for the bootstrap imported hamburger menu => related to the surrounding border */
+.navbar-toggler {
+color: transparent !important;
+border: transparent !important;
+}
