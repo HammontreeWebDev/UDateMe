@@ -11,22 +11,23 @@ const DashboardNavBar = (props) => {
     return (
         <>
             {[false].map((expand) => (
-                <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+                <Navbar key={expand} expand={expand} className="mb-3 bg-mainpurple" variant='dark'>
                     <Container fluid>
-                        <Navbar.Brand>UDateMe</Navbar.Brand>
+                        <Navbar.Brand className='nav-title-text'>UDateMe</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                             placement="end"
+                            className="bg-bluepurple"
                         >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    Welcome!
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className='nav-title-text'>
+                                    My Dashboard
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Nav className="justify-content-end flex-grow-1 pe-3">
+                                <Nav className="justify-content-end flex-grow-1 pe-3 nav-link-text">
                                     <Nav.Link onClick={props.homeClick}>Home</Nav.Link>
                                     <Nav.Link onClick={props.conversationClick}>Conversation Starters</Nav.Link>
                                     <Nav.Link onClick={props.diningClick}>Dining</Nav.Link>
