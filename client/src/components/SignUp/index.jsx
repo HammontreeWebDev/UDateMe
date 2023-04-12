@@ -9,6 +9,9 @@ import Auth from '../../utils/auth';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+// CSS:
+import './assets/css/signup.css';
+
 const SignUp = () => {
 
     const [formState, setFormState] = useState({
@@ -44,23 +47,25 @@ const SignUp = () => {
 
     return (
         <>
-            <Form onSubmit={handleFormSubmit}>
+            <Form onSubmit={handleFormSubmit} className='default-font custom-form'>
 
                 <Form.Group className="mb-3" controlId="formBasicUsername">
-                    <Form.Label>Username</Form.Label>
+                    <Form.Label className='custom-label'>Username</Form.Label>
                     <Form.Control name="username" type="text" placeholder="Enter username"
                         value={formState.username}
-                        onChange={handleChange} />
+                        onChange={handleChange}
+                        className='custom-placeholder' />
                     <Form.Text className="text-muted">
                         This is the name we will use to greet you.
                     </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label className='custom-label'>Email address</Form.Label>
                     <Form.Control name="email" type="email" placeholder="Enter email"
                         value={formState.email}
                         onChange={handleChange}
+                        className='custom-placeholder'
                     />
                     <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
@@ -68,17 +73,18 @@ const SignUp = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label className='custom-label'>Password</Form.Label>
                     <Form.Control name="password" type="password" placeholder="Password"
                         value={formState.password}
                         onChange={handleChange}
+                        className='custom-placeholder'
                     />
                     <Form.Text className="text-muted">
                         Please create a password longer than 8 characters.
                     </Form.Text>
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
+                    Sign Up
                 </Button>
             </Form>
             {error && (
