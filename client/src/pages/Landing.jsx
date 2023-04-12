@@ -51,7 +51,7 @@ const Landing = () => {
                 <LandingNavBar loginClick={loginClick} signUpClick={signupClick} homeClick={homeClick} />
             </header>
             <main>
-                <section>
+                <section className='landing'>
                     {showMainContent ? <MainContent /> : null}
                     {showLogin ? <Login /> : null}
                     {showSignup ? <SignUp /> : null}

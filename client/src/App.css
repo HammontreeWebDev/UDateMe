@@ -18,3 +18,7 @@
 body {
     min-height: 100vh;
 }
+
+.default-font {
+    font-family: var(--neon);
+}

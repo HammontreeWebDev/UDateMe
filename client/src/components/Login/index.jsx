@@ -8,6 +8,9 @@ import Auth from '../../utils/auth';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+// CSS:
+import './assets/css/login.css';
+
 const Login = () => {
     const [formState, setFormState] = useState({ email: '', password: '' });
     const [login, { error, data }] = useMutation(LOGIN_USER);
@@ -43,12 +46,13 @@ const Login = () => {
     };
     return (
         <>
-            <Form onSubmit={handleFormSubmit}>
+            <Form onSubmit={handleFormSubmit} className='default-font custom-form'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label className='custom-label'>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" name="email"
                         value={formState.email}
                         onChange={handleChange}
+                        className='custom-placeholder'
                     />
                     <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
@@ -56,10 +60,11 @@ const Login = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label className='custom-label'>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" name="password"
                         value={formState.password}
                         onChange={handleChange}
+                        className='custom-placeholder'
                     />
                 </Form.Group>
                 <Button variant="primary" type="submit">
