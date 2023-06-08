@@ -52,6 +52,8 @@ main {
     position: relative;
     text-align: center;
     padding-bottom: 1% ;
+    color: white;
+    text-shadow: 3px 2px var(--blue-purple);
 }
 
 .component-title::after{
@@ -61,5 +63,5 @@ main {
     width: 75%;
     left: 12.5%;
     bottom: 0;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white;
 }
