@@ -1,18 +1,32 @@
 #conversation-component {
-    height: 100%;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    flex: 1;
-}
-
-.section-content {
-    margin-top: 15%;
-    padding: 3%;
+    min-height: 50dvh;
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
+}
+
+.section-content {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    background-color: var(--blue);
+    text-align: center;
+    border-radius: 0.5rem;
+    min-height: 20dvh;
+}
+
+#convo-button {
+    background-color: var(--dark-pink);
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+}
+
+#generated-response {
+    color: white;
 }

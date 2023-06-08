@@ -14,9 +14,10 @@ const ConversationStarters = () => {
 
 
     return (
-        <section id='conversation-component'>
+        <section id='conversation-component' className='default-font'>
+            <h1 className='component-title'>Conversation Starters</h1>
             <div className='section-content'>
-                <button onClick={fetchConversationStarter}>Generate</button>
+                <button id='convo-button' onClick={fetchConversationStarter}>Generate</button>
                 <p id='generated-response'>Click the "Generate" button to get started!</p>
             </div>
         </section>

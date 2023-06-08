@@ -33,3 +33,20 @@ main {
     margin: 0;
     padding: 1%;
 }
+
+.component-title {
+    font-family: var(--frijole);
+    position: relative;
+    text-align: center;
+    padding-bottom: 1% ;
+}
+
+.component-title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 75%;
+    left: 12.5%;
+    bottom: 0;
+    border-bottom: 3px solid black;
+}
