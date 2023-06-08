@@ -12,11 +12,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid white;
     background-color: var(--blue);
     text-align: center;
     border-radius: 0.5rem;
     min-height: 20dvh;
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.5);
 }
 
 #convo-button {
