@@ -67,13 +67,12 @@ const Dashboard = () => {
         <header>
         <DashboardNavBar homeClick={homeClick} conversationClick={conversationClick} diningClick={diningClick} entertainmentClick={entertainmentClick} logoutClick={logoutClick} />
         </header>
-        <main>
+        <main className='dashboard-main'>
             <section>
             {showMainContent ? <MainContent /> : null}
             {showConversation ? <ConversationStarters /> : null}
             {showDining ? <Dining /> : null}
             {showEntertainment ? <Entertainment /> : null}
-
             </section>
         </main>
         </>
