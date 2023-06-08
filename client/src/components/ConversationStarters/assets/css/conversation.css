@@ -1,0 +1,18 @@
+#conversation-component {
+    height: 100%;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    flex: 1;
+}
+
+.section-content {
+    margin-top: 15%;
+    padding: 3%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}

@@ -11,15 +11,14 @@ const ConversationStarters = () => {
         const chosenQuestion = questionList[randomQuestion];
         generatedResponseEl.textContent = chosenQuestion;
     }
-    
+
 
     return (
         <section id='conversation-component'>
-        <p>
-            This is the Conversation Starters Component!
-            <button onClick={fetchConversationStarter}>Convo Starter</button>
-        </p>
-        <p id='generated-response'></p>
+            <div className='section-content'>
+                <button onClick={fetchConversationStarter}>Generate</button>
+                <p id='generated-response'>Click the "Generate" button to get started!</p>
+            </div>
         </section>
     )
 };
