@@ -1,16 +1,3 @@
-body {
-    background-image: url(../img/hearts.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-
-    /* Credit: 
-
-    Photo by Molly Champion: 
-    https://www.pexels.com/photo/multicolor-heart-shaped-candies-3723869/
-
-    */
-}
-
 .landing {
     height: 100%;
     display: flex;
