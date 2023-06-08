@@ -1,5 +1,6 @@
 import React from 'react';
 import questionList from '../../utils/conversation';
+import './assets/css/conversation.css';
 
 const ConversationStarters = () => {
 
@@ -13,13 +14,13 @@ const ConversationStarters = () => {
     
 
     return (
-        <>
+        <section id='conversation-component'>
         <p>
             This is the Conversation Starters Component!
             <button onClick={fetchConversationStarter}>Convo Starter</button>
         </p>
         <p id='generated-response'></p>
-        </>
+        </section>
     )
 };
 

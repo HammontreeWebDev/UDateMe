@@ -7,6 +7,9 @@ import ConversationStarters from '../components/ConversationStarters';
 import Dining from '../components/Dining';
 import Entertainment from '../components/Entertainment';
 
+// css:
+import './assets/css/dashboard.css';
+
 // Dashboard Page
 
 const Dashboard = () => {
@@ -67,13 +70,13 @@ const Dashboard = () => {
         <header>
         <DashboardNavBar homeClick={homeClick} conversationClick={conversationClick} diningClick={diningClick} entertainmentClick={entertainmentClick} logoutClick={logoutClick} />
         </header>
-        <main className='dashboard-main'>
-            <section>
+        <main id='dashboard-main'>
+            {/* Make sure each component is wrapped in a section tag to customize styling for each individual component */}
             {showMainContent ? <MainContent /> : null}
             {showConversation ? <ConversationStarters /> : null}
             {showDining ? <Dining /> : null}
             {showEntertainment ? <Entertainment /> : null}
-            </section>
+            
         </main>
         </>
     )
