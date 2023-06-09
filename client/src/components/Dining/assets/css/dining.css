@@ -1,0 +1,19 @@
+.dining-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#options-form{
+    display: flex;
+    flex-direction: column;
+}
